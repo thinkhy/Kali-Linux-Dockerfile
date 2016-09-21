@@ -19,5 +19,7 @@ RUN sed -i -e 's/^PermitRootLogin.*$/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 EXPOSE 22
 
-# start sshd and enter BASH
-ENTRYPOINT service ssh start && bash
+# start sshd 
+# ENTRYPOINT service ssh start && bash
+# Replace ENTRYPOINT with CMD for convenient debugging
+CMD ["/usr/sbin/sshd", "-D"]
