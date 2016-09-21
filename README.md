@@ -12,7 +12,7 @@ Usage
    * Build image
     - Issue `sudo docker build .`
    * Start container
-    - Issue `sudo docker run -it -p HOST_PORT:22 IMAGE_ID` , for exmaple: `docker run -it -p 7022:22 864b91e5e2f9`
+    - Issue `sudo docker run -d -p HOST_PORT:22 IMAGE_ID` , for exmaple: `docker run -d -p 7022:22 864b91e5e2f9`
    * Connect to container remotely if you play with Docker in a PaaS platform
     - Issue `ssh root@IP -p HOST_PORT` then input default password K@li2016 (remember to change your password after first login)
        
